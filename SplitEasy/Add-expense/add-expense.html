@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SplitEasy - Add Expense</title>
+
+    <link rel="stylesheet" href="add-expense.css">
+</head>
+
+<body>
+
+    <header class="top-bar">
+
+        <a href="../Home/home.html" class="logo">
+            <span class="logo-icon">S</span>
+            <span>SplitEasy</span>
+        </a>
+
+        <div class="search-box">
+            <input
+                type="text"
+                placeholder="Search groups, expenses, friends..."
+            >
+        </div>
+
+        <div class="top-actions">
+
+            <span class="notice">♧</span>
+
+            <a href="../Add-expense/add-expense.html" class="top-add">
+                + Add Expense
+            </a>
+
+            <div class="top-user">
+                <span class="user-pic">D</span>
+                <span>Darshit</span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <div class="page-layout">
+
+        <aside class="sidebar">
+
+            <p class="menu-title">
+                MENU
+            </p>
+
+            <nav>
+
+                <a href="../Home/home.html">Home / My Groups</a>
+
+<a href="../Create-group/create-group.html">Create Group</a>
+
+<a href="../Group_details/group-details.html">Group Details</a>
+
+<a href="../Add-expense/add-expense.html">Add Expense</a>
+
+<a href="../Split-options/split-options.html">Split Options</a>
+
+<a href="../Balances/balances.html">Balances & Settle Up</a>
+
+<a href="../History/history.html">Expense History</a>
+
+            </nav>
+
+
+            <div class="side-user">
+
+                <span class="side-avatar">
+                    D
+                </span>
+
+                <div>
+                    <strong>Darshit Patel</strong>
+                    <small>@darshit_p</small>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <main class="main-content">
+
+            <div class="page-head">
+
+                <div>
+
+                    <p class="breadcrumb">
+                        Groups / Goa Roadtrip / New Expense
+                    </p>
+
+                    <h1>
+                        Add Expense
+                    </h1>
+
+                    <p class="page-text">
+                        Enter the bill details and split it with your group.
+                    </p>
+
+                </div>
+
+                <span class="step">
+                    STEP 1 OF 2
+                </span>
+
+            </div>
+
+
+            <div class="expense-layout">
+
+
+                <section class="expense-form">
+
+                    <div class="form-top">
+
+                        <div>
+                            <span class="form-tag">
+                                EXPENSE DETAILS
+                            </span>
+
+                            <h2>
+                                What did you spend?
+                            </h2>
+                        </div>
+
+                        <span class="group-name">
+                            Goa Roadtrip 🌴
+                        </span>
+
+                    </div>
+
+
+                    <form>
+
+
+                        <div class="field">
+
+                            <label for="expense-name">
+                                Expense Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="expense-name"
+                                placeholder="Dinner at Beach Cafe"
+                                value="Dinner at Beach Cafe"
+                            >
+
+                        </div>
+
+
+                        <div class="amount-field">
+
+                            <label for="amount">
+                                Amount
+                            </label>
+
+                            <div class="money-input">
+                                <span>₹</span>
+
+                                <input
+                                    type="number"
+                                    id="amount"
+                                    value="1800"
+                                    placeholder="0"
+                                >
+                            </div>
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>
+                                Category
+                            </label>
+
+                            <div class="category-list">
+
+                                <button
+                                    type="button"
+                                    class="category food active"
+                                >
+                                    🍕 Food
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="category travel"
+                                >
+                                    ✈ Travel
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="category shop"
+                                >
+                                    🛍 Shopping
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="category ride"
+                                >
+                                    🚕 Transport
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="category fun"
+                                >
+                                    🎬 Fun
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="category bill"
+                                >
+                                    💡 Bills
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>
+                                Paid By
+                            </label>
+
+                            <div class="person-list">
+
+                                <button
+                                    type="button"
+                                    class="person active"
+                                >
+                                    <span class="person-pic purple">
+                                        D
+                                    </span>
+
+                                    <span>
+                                        Darshit
+                                    </span>
+
+                                    <small>
+                                        You
+                                    </small>
+                                </button>
+
+
+                                <button
+                                    type="button"
+                                    class="person"
+                                >
+                                    <span class="person-pic blue">
+                                        R
+                                    </span>
+
+                                    <span>
+                                        Rahul
+                                    </span>
+                                </button>
+
+
+                                <button
+                                    type="button"
+                                    class="person"
+                                >
+                                    <span class="person-pic green">
+                                        A
+                                    </span>
+
+                                    <span>
+                                        Aman
+                                    </span>
+                                </button>
+
+
+                                <button
+                                    type="button"
+                                    class="person"
+                                >
+                                    <span class="person-pic pink">
+                                        P
+                                    </span>
+
+                                    <span>
+                                        Priya
+                                    </span>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <label>
+                                Split Between
+                            </label>
+
+                            <div class="split-people">
+
+                                <label class="split-person">
+
+                                    <input
+                                        type="checkbox"
+                                        checked
+                                    >
+
+                                    <span class="check-pic purple">
+                                        D
+                                    </span>
+
+                                    <span class="split-name">
+                                        Darshit
+                                    </span>
+
+                                    <span class="you-tag">
+                                        You
+                                    </span>
+
+                                </label>
+
+
+                                <label class="split-person">
+
+                                    <input
+                                        type="checkbox"
+                                        checked
+                                    >
+
+                                    <span class="check-pic blue">
+                                        R
+                                    </span>
+
+                                    <span class="split-name">
+                                        Rahul
+                                    </span>
+
+                                </label>
+
+
+                                <label class="split-person">
+
+                                    <input
+                                        type="checkbox"
+                                        checked
+                                    >
+
+                                    <span class="check-pic green">
+                                        A
+                                    </span>
+
+                                    <span class="split-name">
+                                        Aman
+                                    </span>
+
+                                </label>
+
+
+                                <label class="split-person">
+
+                                    <input
+                                        type="checkbox"
+                                        checked
+                                    >
+
+                                    <span class="check-pic pink">
+                                        P
+                                    </span>
+
+                                    <span class="split-name">
+                                        Priya
+                                    </span>
+
+                                </label>
+
+
+                                <label class="split-person">
+
+                                    <input
+                                        type="checkbox"
+                                    >
+
+                                    <span class="check-pic orange">
+                                        N
+                                    </span>
+
+                                    <span class="split-name">
+                                        Neha
+                                    </span>
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="two-fields">
+
+                            <div class="field">
+
+                                <label for="date">
+                                    Date
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="date"
+                                    value="2026-10-12"
+                                >
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label for="group">
+                                    Group
+                                </label>
+
+                                <select id="group">
+
+                                    <option>
+                                        Goa Roadtrip
+                                    </option>
+
+                                    <option>
+                                        College Friends
+                                    </option>
+
+                                    <option>
+                                        Flat Expenses
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="field">
+
+                            <div class="label-row">
+
+                                <label for="note">
+                                    Notes
+                                </label>
+
+                                <span>
+                                    Optional
+                                </span>
+
+                            </div>
+
+                            <textarea
+                                id="note"
+                                rows="3"
+                                placeholder="Add a small note about this expense..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <div class="form-buttons">
+
+                            <a
+                                href="group-details.html"
+                                class="cancel-btn"
+                            >
+                                Cancel
+                            </a>
+
+                            <a
+                                href="split-options.html"
+                                class="next-btn"
+                            >
+                                Continue to Split →
+                            </a>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+
+                <aside class="summary-side">
+
+
+                    <div class="summary-card">
+
+                        <div class="summary-head">
+
+                            <div>
+
+                                <span class="summary-tag">
+                                    LIVE PREVIEW
+                                </span>
+
+                                <h2>
+                                    Dinner at Beach Cafe
+                                </h2>
+
+                            </div>
+
+                            <span class="food-icon">
+                                🍕
+                            </span>
+
+                        </div>
+
+
+                        <div class="total">
+
+                            <span>
+                                TOTAL EXPENSE
+                            </span>
+
+                            <strong>
+                                ₹1,800
+                            </strong>
+
+                        </div>
+
+
+                        <div class="paid-box">
+
+                            <span>
+                                Paid by
+                            </span>
+
+                            <div class="paid-person">
+
+                                <span class="person-pic purple">
+                                    D
+                                </span>
+
+                                <strong>
+                                    Darshit
+                                </strong>
+
+                                <span class="you-tag">
+                                    You
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="split-box">
+
+                            <div class="box-head">
+
+                                <strong>
+                                    Current split
+                                </strong>
+
+                                <span>
+                                    4 people
+                                </span>
+
+                            </div>
+
+
+                            <div class="split-line">
+
+                                <span>Darshit</span>
+                                <strong>₹450</strong>
+
+                            </div>
+
+                            <div class="split-line">
+
+                                <span>Rahul</span>
+                                <strong>₹450</strong>
+
+                            </div>
+
+                            <div class="split-line">
+
+                                <span>Aman</span>
+                                <strong>₹450</strong>
+
+                            </div>
+
+                            <div class="split-line">
+
+                                <span>Priya</span>
+                                <strong>₹450</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="fair-box">
+
+                            <span>✓</span>
+
+                            <div>
+
+                                <strong>
+                                    Looks fair!
+                                </strong>
+
+                                <p>
+                                    Everyone selected has an equal ₹450 share.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="help-card">
+
+                        <div class="help-icon">
+                            💡
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Quick tip
+                            </h3>
+
+                            <p>
+                                Add every person who needs to share
+                                this expense. You can change the
+                                split on the next step.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </aside>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <nav class="mobile-menu">
+<a href="../Home/home.html">Home / My Groups</a>
+
+<a href="../Create-group/create-group.html">Create Group</a>
+
+<a href="../Group_details/group-details.html">Group Details</a>
+
+<a href="../Add-expense/add-expense.html">Add Expense</a>
+
+<a href="../Split-options/split-options.html">Split Options</a>
+
+<a href="../Balances/balances.html">Balances & Settle Up</a>
+
+<a href="../History/history.html">Expense History</a>
+
+    </nav>
+
+</body>
+
+</html>

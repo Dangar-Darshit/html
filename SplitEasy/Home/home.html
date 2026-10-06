@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SplitEasy - My Groups</title>
+
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+
+    <header class="top-bar">
+
+      <a href="../Home/home.html">Home / My Groups</a>
+            <span class="logo-icon">S</span>
+            <span>SplitEasy</span>
+        </a>
+
+        <div class="top-search">
+            <input
+                type="text"
+                placeholder="Search groups, expenses, friends..."
+            >
+        </div>
+
+        <div class="top-right">
+
+            <span class="bell">♧</span>
+
+            <a href="../Add-expense/add-expense.html">
+    Add Expense
+</a>
+
+            <div class="mini-user">
+                <span class="mini-avatar">D</span>
+                <span>Darshit</span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <div class="page-layout">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="menu-title">
+                MENU
+            </div>
+
+            <nav>
+
+                <a href="home.html" class="menu active">
+                    <span>⌂</span>
+                    Home / My Groups
+                </a>
+
+                <a href="../Create-group/create-group.html">
+    Create Group
+</a>
+
+                <a href="../Group_details/group-details.html">
+    Group Details
+</a>
+
+               <a href="../Add-expense/add-expense.html">
+    Add Expense
+</a>
+               <a href="../Split-options/split-options.html">
+    Split Options
+</a>
+
+                <a href="../Balances/balances.html">
+    Balances & Settle Up
+</a>
+               <a href="../History/history.html">
+    Expense History
+</a>
+
+            </nav>
+
+
+            <div class="sidebar-user">
+
+                <span class="profile-pic">
+                    D
+                </span>
+
+                <div>
+                    <strong>Darshit Patel</strong>
+                    <small>@darshit_p</small>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <!-- Page Heading -->
+
+            <section class="page-head">
+
+                <div>
+                    <p class="page-name">
+                        Home / My Groups
+                    </p>
+
+                    <h1>
+                        Good morning, Darshit 👋
+                    </h1>
+
+                    <p class="page-text">
+                        Here's your expense overview.
+                    </p>
+                </div>
+
+                <a
+                    href="create-group.html"
+                    class="group-btn"
+                >
+                    + Create Group
+                </a>
+
+            </section>
+
+
+            <!-- Balance Cards -->
+
+            <section class="balance-cards">
+
+                <div class="balance-card green-card">
+
+                    <div class="balance-top">
+                        <span>You are owed</span>
+                        <span class="circle-icon">↑</span>
+                    </div>
+
+                    <h2>₹2,850</h2>
+
+                    <p>
+                        From 3 groups
+                    </p>
+
+                </div>
+
+
+                <div class="balance-card red-card">
+
+                    <div class="balance-top">
+                        <span>You owe</span>
+                        <span class="circle-icon">↓</span>
+                    </div>
+
+                    <h2>₹1,240</h2>
+
+                    <p>
+                        Across 2 groups
+                    </p>
+
+                </div>
+
+
+                <div class="balance-card purple-card">
+
+                    <div class="balance-top">
+                        <span>Net Balance</span>
+                        <span class="circle-icon">₹</span>
+                    </div>
+
+                    <h2>+₹1,610</h2>
+
+                    <p>
+                        Looking good!
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Groups -->
+
+            <section class="groups-section">
+
+                <div class="section-head">
+
+                    <div>
+                        <h2>
+                            My Groups
+                        </h2>
+
+                        <p>
+                            Your active expense groups
+                        </p>
+                    </div>
+
+                    <a href="create-group.html">
+                        + New group
+                    </a>
+
+                </div>
+
+
+                <div class="group-grid">
+
+
+                    <!-- Goa -->
+
+                    <a
+                        href="group-details.html"
+                        class="group-card"
+                    >
+
+                        <img
+                            src="assets/groups-scene.png"
+                            alt="Goa trip"
+                        >
+
+                        <div class="group-content">
+
+                            <div class="group-title">
+                                <h3>Goa Trip 🌴</h3>
+
+                                <span class="green-badge">
+                                    +₹1,250
+                                </span>
+                            </div>
+
+                            <p>
+                                5 members · ₹8,450 total
+                            </p>
+
+                            <div class="group-bottom">
+                                <span>
+                                    Last activity today
+                                </span>
+
+                                <span>
+                                    View group →
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- College Friends -->
+
+                    <a
+                        href="group-details.html"
+                        class="group-card"
+                    >
+
+                        <img
+                            src="assets/goa-scene.png"
+                            alt="College friends"
+                        >
+
+                        <div class="group-content">
+
+                            <div class="group-title">
+
+                                <h3>
+                                    College Friends
+                                </h3>
+
+                                <span class="red-badge">
+                                    -₹420
+                                </span>
+
+                            </div>
+
+                            <p>
+                                8 members · ₹4,280 total
+                            </p>
+
+                            <div class="group-bottom">
+                                <span>
+                                    Last activity yesterday
+                                </span>
+
+                                <span>
+                                    View group →
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- Flat Expenses -->
+
+                    <a
+                        href="group-details.html"
+                        class="group-card"
+                    >
+
+                        <img
+                            src="assets/create-scene.png"
+                            alt="Flat expenses"
+                        >
+
+                        <div class="group-content">
+
+                            <div class="group-title">
+
+                                <h3>
+                                    Flat Expenses
+                                </h3>
+
+                                <span class="green-badge">
+                                    +₹850
+                                </span>
+
+                            </div>
+
+                            <p>
+                                4 members · ₹12,600 total
+                            </p>
+
+                            <div class="group-bottom">
+                                <span>
+                                    Last activity 2 days ago
+                                </span>
+
+                                <span>
+                                    View group →
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- Weekend Dinner -->
+
+                    <a
+                        href="group-details.html"
+                        class="group-card"
+                    >
+
+                        <img
+                            src="assets/expense-scene.png"
+                            alt="Weekend dinner"
+                        >
+
+                        <div class="group-content">
+
+                            <div class="group-title">
+
+                                <h3>
+                                    Weekend Dinner
+                                </h3>
+
+                                <span class="red-badge">
+                                    -₹180
+                                </span>
+
+                            </div>
+
+                            <p>
+                                6 members · ₹3,200 total
+                            </p>
+
+                            <div class="group-bottom">
+                                <span>
+                                    Last activity 3 days ago
+                                </span>
+
+                                <span>
+                                    View group →
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- New Group -->
+
+                    <a
+                        href="create-group.html"
+                        class="new-group"
+                    >
+
+                        <div class="plus-box">
+                            +
+                        </div>
+
+                        <h3>
+                            Start a New Group
+                        </h3>
+
+                        <p>
+                            Trips, friends or roommates
+                        </p>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- Recent Expenses -->
+
+            <section class="recent-section">
+
+                <div class="section-head">
+
+                    <div>
+                        <h2>
+                            Recent Expenses
+                        </h2>
+
+                        <p>
+                            Your latest shared expenses
+                        </p>
+                    </div>
+
+                    <a href="history.html">
+                        View all
+                    </a>
+
+                </div>
+
+
+                <div class="expense-list">
+
+
+                    <div class="expense-item">
+
+                        <div class="expense-icon food">
+                            🍕
+                        </div>
+
+                        <div class="expense-info">
+
+                            <h3>
+                                Dinner at Beach Cafe
+                            </h3>
+
+                            <p>
+                                Goa Trip · Today
+                            </p>
+
+                        </div>
+
+                        <strong class="expense-red">
+                            -₹450
+                        </strong>
+
+                    </div>
+
+
+                    <div class="expense-item">
+
+                        <div class="expense-icon ride">
+                            🚕
+                        </div>
+
+                        <div class="expense-info">
+
+                            <h3>
+                                Airport Taxi
+                            </h3>
+
+                            <p>
+                                Goa Trip · Yesterday
+                            </p>
+
+                        </div>
+
+                        <strong class="expense-green">
+                            +₹1,320
+                        </strong>
+
+                    </div>
+
+
+                    <div class="expense-item">
+
+                        <div class="expense-icon hotel">
+                            🏨
+                        </div>
+
+                        <div class="expense-info">
+
+                            <h3>
+                                Hotel Booking
+                            </h3>
+
+                            <p>
+                                Goa Trip · 2 days ago
+                            </p>
+
+                        </div>
+
+                        <strong class="expense-green">
+                            +₹750
+                        </strong>
+
+                    </div>
+
+
+                    <div class="expense-item">
+
+                        <div class="expense-icon movie">
+                            🎬
+                        </div>
+
+                        <div class="expense-info">
+
+                            <h3>
+                                Movie Tickets
+                            </h3>
+
+                            <p>
+                                College Friends · 3 days ago
+                            </p>
+
+                        </div>
+
+                        <strong class="expense-red">
+                            -₹300
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- Mobile Navigation -->
+
+    <nav class="mobile-menu">
+
+        <a href="home.html" class="mobile-active">
+            <span>⌂</span>
+            Home
+        </a>
+
+        <a href="create-group.html">
+            <span>👥</span>
+            Groups
+        </a>
+
+        <a href="add-expense.html" class="mobile-add">
+            +
+        </a>
+
+        <a href="balances.html">
+            <span>₹</span>
+            Balance
+        </a>
+
+        <a href="history.html">
+            <span>▤</span>
+            History
+        </a>
+
+    </nav>
+
+</body>
+
+</html>

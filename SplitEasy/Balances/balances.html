@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SplitEasy - Balances</title>
+
+    <link rel="stylesheet" href="balances.css">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+
+    <header class="top-bar">
+
+        <a href="home.html" class="logo">
+            <span class="logo-icon">S</span>
+            <span>SplitEasy</span>
+        </a>
+
+        <div class="search-box">
+            <input
+                type="text"
+                placeholder="Search groups, expenses, friends..."
+            >
+        </div>
+
+        <div class="top-actions">
+
+            <span class="notice">♧</span>
+
+            <a
+                href="add-expense.html"
+                class="top-add"
+            >
+                + Add Expense
+            </a>
+
+            <div class="top-user">
+
+                <span class="user-pic">
+                    D
+                </span>
+
+                <span>
+                    Darshit
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <div class="page-layout">
+
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <p class="menu-title">
+                MENU
+            </p>
+
+            <nav>
+
+                <a
+                    href="home.html"
+                    class="menu"
+                >
+                    <span>⌂</span>
+                    Home / My Groups
+                </a>
+
+                <a
+                    href="create-group.html"
+                    class="menu"
+                >
+                    <span>＋</span>
+                    Create Group
+                </a>
+
+                <a
+                    href="group-details.html"
+                    class="menu"
+                >
+                    <span>◉</span>
+                    Group Details
+                </a>
+
+                <a
+                    href="add-expense.html"
+                    class="menu"
+                >
+                    <span>＋</span>
+                    Add Expense
+                </a>
+
+                <a
+                    href="split-options.html"
+                    class="menu"
+                >
+                    <span>÷</span>
+                    Split Options
+                </a>
+
+                <a
+                    href="balances.html"
+                    class="menu active"
+                >
+                    <span>₹</span>
+                    Balances & Settle Up
+                </a>
+
+                <a
+                    href="history.html"
+                    class="menu"
+                >
+                    <span>▤</span>
+                    Expense History
+                </a>
+
+            </nav>
+
+
+            <div class="side-user">
+
+                <span class="side-avatar">
+                    D
+                </span>
+
+                <div>
+
+                    <strong>
+                        Darshit Patel
+                    </strong>
+
+                    <small>
+                        @darshit_p
+                    </small>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main -->
+
+        <main class="main-content">
+
+
+            <!-- Heading -->
+
+            <section class="page-head">
+
+                <div>
+
+                    <p class="breadcrumb">
+                        Track balances / Settle payments
+                    </p>
+
+                    <h1>
+                        Balances & Settle Up
+                    </h1>
+
+                    <p class="page-text">
+                        See who owes you and who you need to pay.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="simple-btn"
+                    type="button"
+                >
+                    ↔ Simplify Debts
+                </button>
+
+            </section>
+
+
+            <!-- Balance Summary -->
+
+            <section class="balance-cards">
+
+
+                <div class="balance-card owe-card">
+
+                    <div class="balance-head">
+
+                        <div>
+                            <span>
+                                YOU OWE
+                            </span>
+
+                            <strong>
+                                ₹1,240
+                            </strong>
+
+                            <small>
+                                Across 2 people
+                            </small>
+                        </div>
+
+                        <div class="balance-icon">
+                            ↓
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="balance-card owed-card">
+
+                    <div class="balance-head">
+
+                        <div>
+                            <span>
+                                YOU ARE OWED
+                            </span>
+
+                            <strong>
+                                ₹2,850
+                            </strong>
+
+                            <small>
+                                From 3 people
+                            </small>
+                        </div>
+
+                        <div class="balance-icon">
+                            ↑
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="balance-card net-card">
+
+                    <div class="balance-head">
+
+                        <div>
+                            <span>
+                                NET BALANCE
+                            </span>
+
+                            <strong>
+                                +₹1,610
+                            </strong>
+
+                            <small>
+                                You are ahead
+                            </small>
+                        </div>
+
+                        <div class="balance-icon">
+                            ₹
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Main Balance Area -->
+
+            <div class="balance-layout">
+
+
+                <!-- You Owe -->
+
+                <section class="balance-box">
+
+                    <div class="box-head">
+
+                        <div>
+
+                            <h2>
+                                You Owe
+                            </h2>
+
+                            <p>
+                                Payments you still need to make
+                            </p>
+
+                        </div>
+
+                        <span class="red-label">
+                            2 PEOPLE
+                        </span>
+
+                    </div>
+
+
+                    <div class="person-list">
+
+
+                        <!-- Rahul -->
+
+                        <div class="person-card">
+
+                            <div class="person-avatar blue">
+                                R
+                            </div>
+
+                            <div class="person-info">
+
+                                <strong>
+                                    Rahul Sharma
+                                </strong>
+
+                                <small>
+                                    Goa Roadtrip
+                                </small>
+
+                                <span class="person-date">
+                                    Added today
+                                </span>
+
+                            </div>
+
+                            <div class="person-right">
+
+                                <strong class="red-money">
+                                    ₹450
+                                </strong>
+
+                                <button class="pay-btn">
+                                    Settle
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Priya -->
+
+                        <div class="person-card">
+
+                            <div class="person-avatar pink">
+                                P
+                            </div>
+
+                            <div class="person-info">
+
+                                <strong>
+                                    Priya Singh
+                                </strong>
+
+                                <small>
+                                    Weekend Dinner
+                                </small>
+
+                                <span class="person-date">
+                                    Added 2 days ago
+                                </span>
+
+                            </div>
+
+                            <div class="person-right">
+
+                                <strong class="red-money">
+                                    ₹790
+                                </strong>
+
+                                <button class="pay-btn">
+                                    Settle
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="owe-total">
+
+                        <span>
+                            Total you owe
+                        </span>
+
+                        <strong>
+                            ₹1,240
+                        </strong>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Others Owe -->
+
+                <section class="balance-box">
+
+                    <div class="box-head">
+
+                        <div>
+
+                            <h2>
+                                Others Owe You
+                            </h2>
+
+                            <p>
+                                Friends who need to pay you
+                            </p>
+
+                        </div>
+
+                        <span class="green-label">
+                            ₹2,850
+                        </span>
+
+                    </div>
+
+
+                    <div class="person-list">
+
+
+                        <!-- Aman -->
+
+                        <div class="person-card">
+
+                            <div class="person-avatar green">
+                                A
+                            </div>
+
+                            <div class="person-info">
+
+                                <strong>
+                                    Aman Verma
+                                </strong>
+
+                                <small>
+                                    Goa Roadtrip
+                                </small>
+
+                                <span class="person-date">
+                                    Due today
+                                </span>
+
+                            </div>
+
+                            <div class="person-right">
+
+                                <strong class="green-money">
+                                    ₹800
+                                </strong>
+
+                                <button class="remind-btn">
+                                    Remind
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Neha -->
+
+                        <div class="person-card">
+
+                            <div class="person-avatar orange">
+                                N
+                            </div>
+
+                            <div class="person-info">
+
+                                <strong>
+                                    Neha Gupta
+                                </strong>
+
+                                <small>
+                                    College Friends
+                                </small>
+
+                                <span class="person-date">
+                                    Due tomorrow
+                                </span>
+
+                            </div>
+
+                            <div class="person-right">
+
+                                <strong class="green-money">
+                                    ₹650
+                                </strong>
+
+                                <button class="remind-btn">
+                                    Remind
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Rahul -->
+
+                        <div class="person-card">
+
+                            <div class="person-avatar purple">
+                                R
+                            </div>
+
+                            <div class="person-info">
+
+                                <strong>
+                                    Rahul Sharma
+                                </strong>
+
+                                <small>
+                                    Airport Cab
+                                </small>
+
+                                <span class="person-date">
+                                    Due this week
+                                </span>
+
+                            </div>
+
+                            <div class="person-right">
+
+                                <strong class="green-money">
+                                    ₹1,400
+                                </strong>
+
+                                <button class="remind-btn">
+                                    Remind
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="owed-total">
+
+                        <span>
+                            Total owed to you
+                        </span>
+
+                        <strong>
+                            ₹2,850
+                        </strong>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- Settlement Card -->
+
+            <section class="settlement-card">
+
+                <div class="settlement-image">
+                    ₹
+                </div>
+
+                <div class="settlement-text">
+
+                    <span>
+                        QUICK SETTLEMENT
+                    </span>
+
+                    <h2>
+                        Clean up your balances
+                    </h2>
+
+                    <p>
+                        You have 5 open balances. Settle payments
+                        and keep your groups clear.
+                    </p>
+
+                </div>
+
+                <div class="settlement-actions">
+
+                    <a
+                        href="history.html"
+                        class="history-btn"
+                    >
+                        View History
+                    </a>
+
+                    <button class="settle-all-btn">
+                        Settle All →
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- Recent Settlements -->
+
+            <section class="recent-box">
+
+                <div class="section-head">
+
+                    <div>
+
+                        <h2>
+                            Recent Settlements
+                        </h2>
+
+                        <p>
+                            Payments that have already been cleared
+                        </p>
+
+                    </div>
+
+                    <a href="history.html">
+                        View all →
+                    </a>
+
+                </div>
+
+
+                <div class="settlement-list">
+
+
+                    <div class="recent-payment">
+
+                        <span class="payment-icon">
+                            ✓
+                        </span>
+
+                        <div>
+                            <strong>
+                                You settled with Aman
+                            </strong>
+
+                            <small>
+                                Goa Roadtrip · Yesterday
+                            </small>
+                        </div>
+
+                        <b>
+                            ₹500
+                        </b>
+
+                        <span class="done">
+                            Settled
+                        </span>
+
+                    </div>
+
+
+                    <div class="recent-payment">
+
+                        <span class="payment-icon">
+                            ✓
+                        </span>
+
+                        <div>
+                            <strong>
+                                Priya settled with you
+                            </strong>
+
+                            <small>
+                                College Friends · 3 days ago
+                            </small>
+                        </div>
+
+                        <b>
+                            ₹350
+                        </b>
+
+                        <span class="done">
+                            Settled
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- Mobile Navigation -->
+
+    <nav class="mobile-menu">
+
+        <a href="home.html">
+            <span>⌂</span>
+            Home
+        </a>
+
+        <a href="group-details.html">
+            <span>👥</span>
+            Groups
+        </a>
+
+        <a
+            href="add-expense.html"
+            class="mobile-add"
+        >
+            +
+        </a>
+
+        <a
+            href="balances.html"
+            class="mobile-active"
+        >
+            <span>₹</span>
+            Balance
+        </a>
+
+        <a href="history.html">
+            <span>▤</span>
+            History
+        </a>
+
+    </nav>
+
+</body>
+
+</html>

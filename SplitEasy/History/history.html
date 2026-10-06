@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SplitEasy - Expense History</title>
+
+    <link rel="stylesheet" href="history.css">
+</head>
+
+<body>
+
+    <header class="top-bar">
+
+        <a href="home.html" class="logo">
+            <span class="logo-icon">S</span>
+            <span>SplitEasy</span>
+        </a>
+
+        <div class="search-box">
+            <input
+                type="text"
+                placeholder="Search groups, expenses, friends..."
+            >
+        </div>
+
+        <div class="top-actions">
+
+            <span class="notice">♧</span>
+
+            <a
+                href="add-expense.html"
+                class="top-add"
+            >
+                + Add Expense
+            </a>
+
+            <div class="top-user">
+
+                <span class="user-pic">
+                    D
+                </span>
+
+                <span>
+                    Darshit
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <div class="page-layout">
+
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <p class="menu-title">
+                MENU
+            </p>
+
+            <nav>
+
+                <a
+                    href="home.html"
+                    class="menu"
+                >
+                    <span>⌂</span>
+                    Home / My Groups
+                </a>
+
+                <a
+                    href="create-group.html"
+                    class="menu"
+                >
+                    <span>＋</span>
+                    Create Group
+                </a>
+
+                <a
+                    href="group-details.html"
+                    class="menu"
+                >
+                    <span>◉</span>
+                    Group Details
+                </a>
+
+                <a
+                    href="add-expense.html"
+                    class="menu"
+                >
+                    <span>＋</span>
+                    Add Expense
+                </a>
+
+                <a
+                    href="split-options.html"
+                    class="menu"
+                >
+                    <span>÷</span>
+                    Split Options
+                </a>
+
+                <a
+                    href="balances.html"
+                    class="menu"
+                >
+                    <span>₹</span>
+                    Balances & Settle Up
+                </a>
+
+                <a
+                    href="history.html"
+                    class="menu active"
+                >
+                    <span>▤</span>
+                    Expense History
+                </a>
+
+            </nav>
+
+
+            <div class="side-user">
+
+                <span class="side-avatar">
+                    D
+                </span>
+
+                <div>
+
+                    <strong>
+                        Darshit Patel
+                    </strong>
+
+                    <small>
+                        @darshit_p
+                    </small>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main -->
+
+        <main class="main-content">
+
+
+            <!-- Heading -->
+
+            <section class="page-head">
+
+                <div>
+
+                    <p class="breadcrumb">
+                        Ledger / All Expenses
+                    </p>
+
+                    <h1>
+                        Expense History
+                    </h1>
+
+                    <p class="page-text">
+                        See all your shared expenses, payments and settlements in one place.
+                    </p>
+
+                </div>
+
+                <a
+                    href="add-expense.html"
+                    class="add-btn"
+                >
+                    + Add Expense
+                </a>
+
+            </section>
+
+
+            <!-- Summary -->
+
+            <section class="summary-cards">
+
+
+                <div class="summary-card total-card">
+
+                    <div>
+                        <span>
+                            TOTAL RECORDED
+                        </span>
+
+                        <strong>
+                            ₹12,480
+                        </strong>
+
+                        <small>
+                            Across all groups
+                        </small>
+                    </div>
+
+                    <div class="summary-icon">
+                        ₹
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card settled-card">
+
+                    <div>
+                        <span>
+                            SETTLED
+                        </span>
+
+                        <strong>
+                            ₹8,200
+                        </strong>
+
+                        <small>
+                            65% of all expenses
+                        </small>
+                    </div>
+
+                    <div class="summary-icon">
+                        ✓
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card share-card">
+
+                    <div>
+                        <span>
+                            YOUR SHARE
+                        </span>
+
+                        <strong>
+                            ₹2,471
+                        </strong>
+
+                        <small>
+                            Your total share
+                        </small>
+                    </div>
+
+                    <div class="summary-icon">
+                        %
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Filters -->
+
+            <section class="filter-box">
+
+                <div class="filter-top">
+
+                    <div>
+
+                        <h2>
+                            All Expenses
+                        </h2>
+
+                        <p>
+                            24 expenses found
+                        </p>
+
+                    </div>
+
+                    <button class="filter-btn">
+                        ⚙ Filters
+                    </button>
+
+                </div>
+
+
+                <div class="filter-row">
+
+                    <input
+                        type="text"
+                        class="expense-search"
+                        placeholder="Search expense or friend..."
+                    >
+
+
+                    <select class="filter-select">
+
+                        <option>
+                            All Groups
+                        </option>
+
+                        <option>
+                            Goa Roadtrip
+                        </option>
+
+                        <option>
+                            College Friends
+                        </option>
+
+                        <option>
+                            Flat Expenses
+                        </option>
+
+                        <option>
+                            Weekend Dinner
+                        </option>
+
+                    </select>
+
+
+                    <select class="filter-select">
+
+                        <option>
+                            All Categories
+                        </option>
+
+                        <option>
+                            Food
+                        </option>
+
+                        <option>
+                            Travel
+                        </option>
+
+                        <option>
+                            Shopping
+                        </option>
+
+                        <option>
+                            Transport
+                        </option>
+
+                        <option>
+                            Entertainment
+                        </option>
+
+                    </select>
+
+
+                    <select class="filter-select">
+
+                        <option>
+                            Last 30 Days
+                        </option>
+
+                        <option>
+                            This Week
+                        </option>
+
+                        <option>
+                            This Month
+                        </option>
+
+                        <option>
+                            Last 3 Months
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="category-row">
+
+                    <button class="category active">
+                        All
+                    </button>
+
+                    <button class="category food">
+                        🍕 Food
+                    </button>
+
+                    <button class="category travel">
+                        ✈ Travel
+                    </button>
+
+                    <button class="category shopping">
+                        🛍 Shopping
+                    </button>
+
+                    <button class="category transport">
+                        🚕 Transport
+                    </button>
+
+                    <button class="category fun">
+                        🎬 Fun
+                    </button>
+
+                    <button class="category bills">
+                        💡 Bills
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- Expenses -->
+
+            <section class="history-box">
+
+
+                <!-- Desktop Heading -->
+
+                <div class="history-head">
+
+                    <span>
+                        EXPENSE
+                    </span>
+
+                    <span>
+                        GROUP
+                    </span>
+
+                    <span>
+                        DATE
+                    </span>
+
+                    <span>
+                        PAID BY
+                    </span>
+
+                    <span>
+                        TOTAL
+                    </span>
+
+                    <span>
+                        YOUR SHARE
+                    </span>
+
+                </div>
+
+
+                <!-- Dinner -->
+
+                <div class="history-item">
+
+                    <div class="expense-name">
+
+                        <span class="expense-icon food-icon">
+                            🍕
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Dinner at Beach Cafe
+                            </strong>
+
+                            <small>
+                                Food · Split equally
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="group-text">
+                        Goa Roadtrip
+                    </div>
+
+
+                    <div class="date-text">
+                        12 Oct 2026
+                    </div>
+
+
+                    <div class="paid-text">
+                        <span class="mini-person blue">
+                            R
+                        </span>
+
+                        Rahul
+                    </div>
+
+
+                    <div class="total-money">
+                        ₹1,800
+                    </div>
+
+
+                    <div class="share-money red">
+                        -₹450
+                    </div>
+
+                </div>
+
+
+                <!-- Taxi -->
+
+                <div class="history-item">
+
+                    <div class="expense-name">
+
+                        <span class="expense-icon ride-icon">
+                            🚕
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Uber Ride from Airport
+                            </strong>
+
+                            <small>
+                                Transport · Equal split
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="group-text">
+                        College Friends
+                    </div>
+
+
+                    <div class="date-text">
+                        11 Oct 2026
+                    </div>
+
+
+                    <div class="paid-text">
+
+                        <span class="mini-person purple">
+                            D
+                        </span>
+
+                        Darshit
+
+                    </div>
+
+
+                    <div class="total-money">
+                        ₹420
+                    </div>
+
+
+                    <div class="share-money green">
+                        +₹210
+                    </div>
+
+                </div>
+
+
+                <!-- Hotel -->
+
+                <div class="history-item">
+
+                    <div class="expense-name">
+
+                        <span class="expense-icon hotel-icon">
+                            🏨
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Hotel Booking
+                            </strong>
+
+                            <small>
+                                Travel · 4 people
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="group-text">
+                        Goa Roadtrip
+                    </div>
+
+
+                    <div class="date-text">
+                        10 Oct 2026
+                    </div>
+
+
+                    <div class="paid-text">
+
+                        <span class="mini-person pink">
+                            P
+                        </span>
+
+                        Priya
+
+                    </div>
+
+
+                    <div class="total-money">
+                        ₹2,600
+                    </div>
+
+
+                    <div class="share-money red">
+                        -₹650
+                    </div>
+
+                </div>
+
+
+                <!-- Movie -->
+
+                <div class="history-item">
+
+                    <div class="expense-name">
+
+                        <span class="expense-icon movie-icon">
+                            🎬
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Movie Tickets
+                            </strong>
+
+                            <small>
+                                Entertainment · Equal split
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="group-text">
+                        Weekend Dinner
+                    </div>
+
+
+                    <div class="date-text">
+                        09 Oct 2026
+                    </div>
+
+
+                    <div class="paid-text">
+
+                        <span class="mini-person green">
+                            A
+                        </span>
+
+                        Aman
+
+                    </div>
+
+
+                    <div class="total-money">
+                        ₹950
+                    </div>
+
+
+                    <div class="share-money red">
+                        -₹190
+                    </div>
+
+                </div>
+
+
+                <!-- WiFi -->
+
+                <div class="history-item">
+
+                    <div class="expense-name">
+
+                        <span class="expense-icon bill-icon">
+                            💡
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Monthly WiFi Bill
+                            </strong>
+
+                            <small>
+                                Bills · Unequal split
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="group-text">
+                        Flat Expenses
+                    </div>
+
+
+                    <div class="date-text">
+                        08 Oct 2026
+                    </div>
+
+
+                    <div class="paid-text">
+
+                        <span class="mini-person purple">
+                            D
+                        </span>
+
+                        Darshit
+
+                    </div>
+
+
+                    <div class="total-money">
+                        ₹999
+                    </div>
+
+
+                    <div class="share-money green">
+                        +₹749
+                    </div>
+
+                </div>
+
+
+                <!-- Grocery -->
+
+                <div class="history-item">
+
+                    <div class="expense-name">
+
+                        <span class="expense-icon shop-icon">
+                            🛍
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Grocery Shopping
+                            </strong>
+
+                            <small>
+                                Shopping · 4 people
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="group-text">
+                        Flat Expenses
+                    </div>
+
+
+                    <div class="date-text">
+                        07 Oct 2026
+                    </div>
+
+
+                    <div class="paid-text">
+
+                        <span class="mini-person orange">
+                            N
+                        </span>
+
+                        Neha
+
+                    </div>
+
+
+                    <div class="total-money">
+                        ₹1,420
+                    </div>
+
+
+                    <div class="share-money red">
+                        -₹355
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- Bottom Info -->
+
+            <section class="history-footer">
+
+                <div class="history-message">
+
+                    <span>
+                        ✓
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Everything is up to date
+                        </strong>
+
+                        <p>
+                            Your expense history is synced with all your groups.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="balances.html"
+                    class="balance-btn"
+                >
+                    Check Balances →
+                </a>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <!-- Mobile Menu -->
+
+    <nav class="mobile-menu">
+
+        <a href="home.html">
+            <span>⌂</span>
+            Home
+        </a>
+
+        <a href="group-details.html">
+            <span>👥</span>
+            Groups
+        </a>
+
+        <a
+            href="add-expense.html"
+            class="mobile-add"
+        >
+            +
+        </a>
+
+        <a href="balances.html">
+            <span>₹</span>
+            Balance
+        </a>
+
+        <a
+            href="history.html"
+            class="mobile-active"
+        >
+            <span>▤</span>
+            History
+        </a>
+
+    </nav>
+
+
+    <script>
+
+        const categories =
+            document.querySelectorAll(".category");
+
+        categories.forEach(function (item) {
+
+            item.addEventListener("click", function () {
+
+                categories.forEach(function (button) {
+                    button.classList.remove("active");
+                });
+
+                item.classList.add("active");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

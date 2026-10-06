@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SplitEasy - Split Options</title>
+
+    <link rel="stylesheet" href="split-options.css">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+
+    <header class="top-bar">
+
+        <a href="home.html" class="logo">
+            <span class="logo-icon">S</span>
+            <span>SplitEasy</span>
+        </a>
+
+        <div class="search-box">
+            <input
+                type="text"
+                placeholder="Search groups, expenses, friends..."
+            >
+        </div>
+
+        <div class="top-actions">
+
+            <span class="notification">
+                ♧
+            </span>
+
+            <a
+                href="add-expense.html"
+                class="add-btn"
+            >
+                + Add Expense
+            </a>
+
+            <div class="top-user">
+
+                <span class="user-avatar">
+                    D
+                </span>
+
+                <span>
+                    Darshit
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <div class="page-layout">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <p class="menu-title">
+                MENU
+            </p>
+
+            <nav>
+
+                <a
+                    href="home.html"
+                    class="menu"
+                >
+                    <span>⌂</span>
+                    Home / My Groups
+                </a>
+
+                <a
+                    href="create-group.html"
+                    class="menu"
+                >
+                    <span>＋</span>
+                    Create Group
+                </a>
+
+                <a
+                    href="group-details.html"
+                    class="menu"
+                >
+                    <span>◉</span>
+                    Group Details
+                </a>
+
+                <a
+                    href="add-expense.html"
+                    class="menu"
+                >
+                    <span>＋</span>
+                    Add Expense
+                </a>
+
+                <a
+                    href="split-options.html"
+                    class="menu active"
+                >
+                    <span>÷</span>
+                    Split Options
+                </a>
+
+                <a
+                    href="balances.html"
+                    class="menu"
+                >
+                    <span>₹</span>
+                    Balances & Settle Up
+                </a>
+
+                <a
+                    href="history.html"
+                    class="menu"
+                >
+                    <span>▤</span>
+                    Expense History
+                </a>
+
+            </nav>
+
+
+            <div class="side-user">
+
+                <span class="side-avatar">
+                    D
+                </span>
+
+                <div>
+                    <strong>
+                        Darshit Patel
+                    </strong>
+
+                    <small>
+                        @darshit_p
+                    </small>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main -->
+
+        <main class="main-content">
+
+            <div class="page-head">
+
+                <div>
+
+                    <a
+                        href="add-expense.html"
+                        class="back-link"
+                    >
+                        ← Back to Expense
+                    </a>
+
+                    <p class="breadcrumb">
+                        Goa Roadtrip · Step 2 of 2
+                    </p>
+
+                    <h1>
+                        How should we split this?
+                    </h1>
+
+                    <p class="page-text">
+                        Choose the method that feels right for this expense.
+                    </p>
+
+                </div>
+
+                <span class="step">
+                    STEP 2 OF 2
+                </span>
+
+            </div>
+
+
+            <!-- Expense Summary -->
+
+            <section class="expense-summary">
+
+                <div class="expense-left">
+
+                    <div class="expense-image">
+                        🍕
+                    </div>
+
+                    <div>
+
+                        <span class="category-tag">
+                            FOOD & DINING
+                        </span>
+
+                        <h2>
+                            Dinner at Beach Cafe
+                        </h2>
+
+                        <p>
+                            Paid by Rahul Sharma · 4 members
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="expense-total">
+
+                    <span>
+                        TOTAL EXPENSE
+                    </span>
+
+                    <strong>
+                        ₹1,800
+                    </strong>
+
+                </div>
+
+            </section>
+
+
+            <!-- Split Methods -->
+
+            <section class="methods-card">
+
+                <div class="section-title">
+
+                    <div>
+
+                        <h2>
+                            Choose a split method
+                        </h2>
+
+                        <p>
+                            Everyone can see exactly how their share is calculated.
+                        </p>
+
+                    </div>
+
+                    <span class="fair-tag">
+                        ✓ FAIR & CLEAR
+                    </span>
+
+                </div>
+
+
+                <div class="method-list">
+
+
+                    <button
+                        type="button"
+                        class="method active"
+                    >
+
+                        <span class="method-icon purple">
+                            ÷
+                        </span>
+
+                        <span class="method-text">
+
+                            <strong>
+                                Equal Split
+                            </strong>
+
+                            <small>
+                                Divide the bill equally between everyone.
+                            </small>
+
+                        </span>
+
+                        <span class="method-price">
+                            ₹450 each
+                        </span>
+
+                        <span class="radio">
+                            ✓
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="method"
+                    >
+
+                        <span class="method-icon blue">
+                            ₹
+                        </span>
+
+                        <span class="method-text">
+
+                            <strong>
+                                Exact Amounts
+                            </strong>
+
+                            <small>
+                                Enter the exact amount each person should pay.
+                            </small>
+
+                        </span>
+
+                        <span class="method-price">
+                            Custom
+                        </span>
+
+                        <span class="radio">
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="method"
+                    >
+
+                        <span class="method-icon pink">
+                            %
+                        </span>
+
+                        <span class="method-text">
+
+                            <strong>
+                                By Percentage
+                            </strong>
+
+                            <small>
+                                Give each person a percentage of the total.
+                            </small>
+
+                        </span>
+
+                        <span class="method-price">
+                            Custom
+                        </span>
+
+                        <span class="radio">
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- Split Details -->
+
+            <section class="split-card">
+
+                <div class="split-head">
+
+                    <div>
+
+                        <h2>
+                            Equal split
+                        </h2>
+
+                        <p>
+                            ₹1,800 ÷ 4 people
+                        </p>
+
+                    </div>
+
+                    <span class="split-total">
+                        ₹450 / person
+                    </span>
+
+                </div>
+
+
+                <div class="people-list">
+
+
+                    <div class="split-person">
+
+                        <div class="person-image purple">
+                            D
+                        </div>
+
+                        <div class="person-info">
+
+                            <strong>
+                                Darshit Patel
+                            </strong>
+
+                            <small>
+                                You
+                            </small>
+
+                        </div>
+
+                        <div class="person-amount">
+                            ₹450
+                        </div>
+
+                        <span class="checked">
+                            ✓
+                        </span>
+
+                    </div>
+
+
+                    <div class="split-person">
+
+                        <div class="person-image blue">
+                            R
+                        </div>
+
+                        <div class="person-info">
+
+                            <strong>
+                                Rahul Sharma
+                            </strong>
+
+                            <small>
+                                Paid the bill
+                            </small>
+
+                        </div>
+
+                        <div class="person-amount">
+                            ₹450
+                        </div>
+
+                        <span class="checked">
+                            ✓
+                        </span>
+
+                    </div>
+
+
+                    <div class="split-person">
+
+                        <div class="person-image green">
+                            A
+                        </div>
+
+                        <div class="person-info">
+
+                            <strong>
+                                Aman Verma
+                            </strong>
+
+                            <small>
+                                Member
+                            </small>
+
+                        </div>
+
+                        <div class="person-amount">
+                            ₹450
+                        </div>
+
+                        <span class="checked">
+                            ✓
+                        </span>
+
+                    </div>
+
+
+                    <div class="split-person">
+
+                        <div class="person-image pink">
+                            P
+                        </div>
+
+                        <div class="person-info">
+
+                            <strong>
+                                Priya Singh
+                            </strong>
+
+                            <small>
+                                Member
+                            </small>
+
+                        </div>
+
+                        <div class="person-amount">
+                            ₹450
+                        </div>
+
+                        <span class="checked">
+                            ✓
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="calculation">
+
+                    <span>
+                        Total split
+                    </span>
+
+                    <strong>
+                        ₹1,800 / ₹1,800
+                    </strong>
+
+                </div>
+
+            </section>
+
+
+            <!-- Bottom -->
+
+            <section class="bottom-area">
+
+                <div class="secure-box">
+
+                    <span>
+                        ✓
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Split looks good!
+                        </strong>
+
+                        <p>
+                            All 4 selected members have an equal ₹450 share.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="bottom-buttons">
+
+                    <a
+                        href="add-expense.html"
+                        class="back-btn"
+                    >
+                        ← Back
+                    </a>
+
+                    <a
+                        href="history.html"
+                        class="save-btn"
+                    >
+                        Save & Confirm Expense ✓
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- Mobile Menu -->
+
+    <nav class="mobile-menu">
+
+        <a href="home.html">
+            <span>⌂</span>
+            Home
+        </a>
+
+        <a href="group-details.html">
+            <span>👥</span>
+            Groups
+        </a>
+
+        <a
+            href="add-expense.html"
+            class="mobile-add"
+        >
+            +
+        </a>
+
+        <a
+            href="balances.html"
+            class="mobile-active"
+        >
+            <span>₹</span>
+            Balance
+        </a>
+
+        <a href="history.html">
+            <span>▤</span>
+            History
+        </a>
+
+    </nav>
+
+
+    <script>
+
+        const methods = document.querySelectorAll(".method");
+
+        methods.forEach(function (item) {
+
+            item.addEventListener("click", function () {
+
+                methods.forEach(function (method) {
+                    method.classList.remove("active");
+                    method.querySelector(".radio").textContent = "";
+                });
+
+                item.classList.add("active");
+                item.querySelector(".radio").textContent = "✓";
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
